@@ -5,7 +5,7 @@
         <version>1.3</version>
         <date>2024-07-01</date>
         <update version="0.0.3">
-            <file name="sorcerer-wretched-bloddline.xml"
+            <file name="sorcerer-wretched-bloodline.xml"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
     </info>
