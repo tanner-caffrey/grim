@@ -2,10 +2,10 @@
 <index>
     <info>
         <author>Grim Hollow</author>
-        <version>1.3</version>
+        <version>1.4</version>
         <date>2024-07-01</date>
-        <update version="0.0.3">
-            <file name="swretched.index"
+        <update version="0.0.4">
+            <file name="wretched.index"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/wretched.index" />
         </update>
     </info>

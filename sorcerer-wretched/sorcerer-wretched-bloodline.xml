@@ -2,9 +2,9 @@
 <elements>
     <info>
         <author>Tanner Caffrey</author>
-        <version>1.3</version>
+        <version>1.4</version>
         <date>2024-07-01</date>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="sorcerer-wretched-bloodline.xml"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
@@ -78,7 +78,7 @@
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" known="true" />
-            <select type="Feature" name="Blood Ties Creature Type"
+            <select type="Archetype Feature" name="Blood Ties Creature Type"
             supports="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FEY|ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FIEND|ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_UNDEAD" />
         </rules>
     </element>
@@ -124,7 +124,7 @@
                 uphold their end of a bargain with an otherworldly power.</description>
         </sheet>
         <rules>
-        <select type="Feature" name="Wretched Curse Type"
+        <select type="Archetype Feature" name="Wretched Curse Type"
             supports="ID_GRIM_HOLLOW_FEATURE_HULKING|ID_GRIM_HOLLOW_FEATURE_NOCTURNAL|ID_GRIM_HOLLOW_FEATURE_PLAGUEBEARER" />
         </rules>
     </element>
@@ -193,7 +193,7 @@
             <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
         </description>
         <rules>
-            <select type="Feature" name="Terrifying Visage Benefit"
+            <select type="Archetype Feature" name="Terrifying Visage Benefit"
                 supports="ID_GRIM_HOLLOW_FEATURE_TERRIFYING_VISAGE_FEY|ID_GRIM_HOLLOW_FEATURE_TERRIFYING_VISAGE_FIEND|ID_GRIM_HOLLOW_FEATURE_TERRIFYING_VISAGE_UNDEAD" />
         </rules>
         <sheet>
@@ -248,7 +248,7 @@
                 action on your part), telling it what it must do on its next turn. If you issue no
                 command, it spends its turn attacking any creature within reach.</p>
         </description>
-        <select type="Feature" name="Vengeful Summons Creature"
+        <select type="Archetype Feature" name="Vengeful Summons Creature"
             supports="Lamia|Troll|Barbed Devil|Incubus|Succubus|Ghost|Wraith" />
     </element>
 </elements>

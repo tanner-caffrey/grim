@@ -2,10 +2,10 @@
 <elements>
     <info>
         <author>Tanner Caffrey</author>
-        <version>1.1</version>
+        <version>1.3</version>
         <date>2024-07-01</date>
-        <update version="0.0.2">
-            <file name="sorcerer-wretched-bloddline.xml"
+        <update version="0.0.3">
+            <file name="sorcerer-wretched-bloodline.xml"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
     </info>
@@ -66,7 +66,7 @@
                 inherited affliction. You know the detect evil and good spell and can cast it
                 without expending a spell slot. This spell counts as a sorcerer spell for you but
                 does not count against your number of spells known. Once you cast this spell without
-                expending a spell slot, you can’t do so again until you finish a short or long rest.</p>
+                expending a spell slot, you can't do so again until you finish a short or long rest.</p>
             <p>In addition, choose one of the following creature types as the being who cursed your
                 ancestor: fey, fiend, or undead. While you are concentrating on the detect evil and
                 good spell, creatures of the chosen type have disadvantage on attack rolls against
@@ -77,10 +77,10 @@
                 spell slot once per short or long rest.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_SPELL_DETECT_EVIL_AND_GOOD" known="true" />
-        </rules>
-        <select type="Feature" name="Blood Ties Creature Type"
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" known="true" />
+            <select type="Feature" name="Blood Ties Creature Type"
             supports="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FEY|ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FIEND|ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_UNDEAD" />
+        </rules>
     </element>
 
     <element name="Blood Ties (Fey)" type="Archetype Feature" source="Grim Hollow Players Guide"
@@ -123,8 +123,10 @@
             <description>Choose one of the following curses inherited from an ancestor who failed to
                 uphold their end of a bargain with an otherworldly power.</description>
         </sheet>
+        <rules>
         <select type="Feature" name="Wretched Curse Type"
             supports="ID_GRIM_HOLLOW_FEATURE_HULKING|ID_GRIM_HOLLOW_FEATURE_NOCTURNAL|ID_GRIM_HOLLOW_FEATURE_PLAGUEBEARER" />
+        </rules>
     </element>
 
     <element name="Hulking" type="Archetype Feature" source="Grim Hollow Players Guide"
@@ -174,7 +176,7 @@
                 damage.</p>
         </description>
         <rules>
-            <grant type="Spell" id="ID_SPELL_BESTOW_CURSE" known="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" known="true" />
         </rules>
     </element>
     <element name="Terrifying Visage" type="Archetype Feature" source="Grim Hollow Players Guide"
@@ -188,7 +190,7 @@
                 creature is frightened of you until the end of your next turn.</p>
             <p>In addition, while you have adopted the terrifying visage, you gain an additional
                 benefit based on the creature type chosen with your Blood Ties feature.</p>
-            <p>Once you use this feature, you can’t use it again until you finish a long rest.</p>
+            <p>Once you use this feature, you can't use it again until you finish a long rest.</p>
         </description>
         <rules>
             <select type="Feature" name="Terrifying Visage Benefit"
