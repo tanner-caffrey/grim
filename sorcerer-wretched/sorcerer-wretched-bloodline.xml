@@ -2,9 +2,9 @@
 <elements>
     <info>
         <author>Tanner Caffrey</author>
-        <version>1.0</version>
+        <version>1.1</version>
         <date>2024-07-01</date>
-        <update version="0.0.1">
+        <update version="0.0.2">
             <file name="sorcerer-wretched-bloddline.xml"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
