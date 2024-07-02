@@ -2,7 +2,7 @@
 <elements>
     <info>
         <update version="0.0.1">
-            <file name="sorcerer-wretched.xml" url="https://github.com/tanner-caffrey/grim/sorverer-wretched/sorcerer-wretched-bloodline.xml" />
+            <file name="sorcerer-wretched.xml" url="https://github.com/tanner-caffrey/grim/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
     </info>
     <element name="Wretched Bloodline" type="Archetype" source="Grim Hollow Players Guide" id="ID_GRIM_HOLLOW_ARCHETYPE_WRETCHED_BLOODLINE">
