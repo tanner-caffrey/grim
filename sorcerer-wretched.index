@@ -2,11 +2,11 @@
 <index>
     <info>
         <author>Grim Hollow</author>
-        <version>1.4</version>
+        <version>1.6</version>
         <date>2024-07-01</date>
-        <update version="0.0.4">
-            <file name="wretched.index"
-                url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/wretched.index" />
+        <update version="0.0.6">
+            <file name="sorcerer-wretched.index"
+                url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched.index" />
         </update>
     </info>
     <files>
