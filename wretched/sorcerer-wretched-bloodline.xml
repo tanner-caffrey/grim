@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
     <info>
-        <author>Tanner Caffrey</author>
-        <version>1.0</version>
-        <date>2024-07-01</date>
-        <source>
-            https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml</source>
+        <update version="0.0.1">
+            <file name="sorcerer-wretched-bloddline.xml"
+                url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
+        </update>
     </info>
     <element name="Wretched Bloodline" type="Archetype" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_ARCHETYPE_WRETCHED_BLOODLINE">
@@ -32,53 +31,10 @@
         <rules>
             <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_BAD_LUCK_CHARM" level="1" />
             <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES" level="1" />
-            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_WRETCHED_CURSE" level="1">
-                <choice>
-                    <option>
-                        <text>Hulking: You have disadvantage on Dexterity (Stealth) checks made to
-                            move quietly. Your max hit points increase by 1 for each level in this
-                            class. You count as one size larger for carrying capacity and weight you
-                            can push, drag, or lift.</text>
-                        <grant type="Additional Hit Points" value="1" />
-                    </option>
-                    <option>
-                        <text>Nocturnal: You have disadvantage on Wisdom (Perception) checks made to
-                            see in sunlight. You have darkvision out to 120 feet and can see through
-                            magical darkness within that range.</text>
-                        <grant type="Darkvision" range="120" />
-                    </option>
-                    <option>
-                        <text>Plaguebearer: You have disadvantage on Charisma (Persuasion) checks
-                            made against humanoid creatures who are not blinded. You are immune to
-                            disease and have resistance to necrotic damage.</text>
-                        <grant type="Damage Resistance" damage="necrotic" />
-                        <grant type="Immunity" effect="disease" />
-                    </option>
-                </choice>
-            </grant>
-            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_SHARE_THE_BURDEN" level="6">
-                <grant type="Spell" id="ID_SPELL_BESTOW_CURSE" known="true" />
-            </grant>
+            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_WRETCHED_CURSE" level="1" />
+            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_SHARE_THE_BURDEN" level="6" />
             <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_TERRIFYING_VISAGE" level="14" />
-            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_VENGEFUL_SUMMONS" level="18">
-                <choice>
-                    <option>
-                        <text>Lamia or Troll (Fey)</text>
-                        <grant type="Summon Creature" creature="Lamia" />
-                        <grant type="Summon Creature" creature="Troll" />
-                    </option>
-                    <option>
-                        <text>Barbed Devil or Incubus/Succubus (Fiend)</text>
-                        <grant type="Summon Creature" creature="Barbed Devil" />
-                        <grant type="Summon Creature" creature="Incubus/Succubus" />
-                    </option>
-                    <option>
-                        <text>Ghost or Wraith (Undead)</text>
-                        <grant type="Summon Creature" creature="Ghost" />
-                        <grant type="Summon Creature" creature="Wraith" />
-                    </option>
-                </choice>
-            </grant>
+            <grant type="Archetype Feature" id="ID_GRIM_HOLLOW_FEATURE_VENGEFUL_SUMMONS" level="18" />
         </rules>
     </element>
 
@@ -109,25 +65,6 @@
                 good spell, creatures of the chosen type have disadvantage on attack rolls against
                 you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
         </description>
-        <grant type="Spell" id="ID_SPELL_DETECT_EVIL_AND_GOOD" known="true" />
-        <choice>
-            <option>
-                <text>Fey</text>
-                <grant type="Condition Immunity" condition="charmed" />
-                <grant type="Condition Immunity" condition="frightened" />
-            </option>
-            <option>
-                <text>Fiend</text>
-                <grant type="Condition Immunity" condition="charmed" />
-                <grant type="Condition Immunity" condition="frightened" />
-            </option>
-            <option>
-                <text>Undead</text>
-                <grant type="Condition Immunity" condition="charmed" />
-                <grant type="Condition Immunity" condition="frightened" />
-                <grant type="Condition Immunity" condition="possessed" />
-            </option>
-        </choice>
     </element>
 
     <element name="Wretched Curse" type="Archetype Feature" source="Grim Hollow Players Guide"
@@ -137,28 +74,19 @@
             <p>Also at 1st level, you suffer from a curse inherited from an ancestor who failed to
                 uphold their end of a bargain with an otherworldly power. Choose one of the
                 following curses that was passed down to you.</p>
-            <choice>
-                <option>
-                    <text>Hulking: Your ancestor was cursed with a hulking frame. You have
-                        disadvantage on Dexterity (Stealth) ability checks made to move quietly. In
-                        addition, your maximum hit points increase by 1 and increase by 1 again each
-                        time you gain a level in this class. Finally, you count as one size larger
-                        when determining your carrying capacity and the weight you can push, drag,
-                        or lift.</text>
-                </option>
-                <option>
-                    <text>Nocturnal: Your ancestor was cursed to shun the light of day. You have
-                        disadvantage on Wisdom (Perception) ability checks made to see while you are
-                        in sunlight. In addition, you have darkvision out to a distance of 120 feet
-                        and can see through magical darkness within that range.</text>
-                </option>
-                <option>
-                    <text>Plaguebearer: Your ancestor was cursed with physical symptoms of a plague.
-                        You have disadvantage on Charisma (Persuasion) ability checks made against
-                        humanoid creatures who are not blinded. In addition, you are immune to
-                        disease and have resistance to necrotic damage.</text>
-                </option>
-            </choice>
+            <p><b>Hulking:</b> Your ancestor was cursed with a hulking frame. You have disadvantage
+                on Dexterity (Stealth) ability checks made to move quietly. In addition, your
+                maximum hit points increase by 1 and increase by 1 again each time you gain a level
+                in this class. Finally, you count as one size larger when determining your carrying
+                capacity and the weight you can push, drag, or lift.</p>
+            <p><b>Nocturnal:</b> Your ancestor was cursed to shun the light of day. You have
+                disadvantage on Wisdom (Perception) ability checks made to see while you are in
+                sunlight. In addition, you have darkvision out to a distance of 120 feet and can see
+                through magical darkness within that range.</p>
+            <p><b>Plaguebearer:</b> Your ancestor was cursed with physical symptoms of a plague. You
+                have disadvantage on Charisma (Persuasion) ability checks made against humanoid
+                creatures who are not blinded. In addition, you are immune to disease and have
+                resistance to necrotic damage.</p>
         </description>
     </element>
 
@@ -173,7 +101,6 @@
                 for that casting and your concentration can't be broken as a result of taking
                 damage.</p>
         </description>
-        <grant type="Spell" id="ID_SPELL_BESTOW_CURSE" known="true" />
     </element>
 
     <element name="Terrifying Visage" type="Archetype Feature" source="Grim Hollow Players Guide"
