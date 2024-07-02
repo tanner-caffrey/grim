@@ -2,9 +2,9 @@
 <elements>
     <info>
         <author>Tanner Caffrey</author>
-        <version>1.6</version>
+        <version>1.7</version>
         <date>2024-07-01</date>
-        <update version="0.0.6">
+        <update version="0.0.7">
             <file name="sorcerer-wretched-bloodline.xml"
                 url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         </update>
@@ -53,9 +53,11 @@
                 to use it again.</p>
         </description>
         <sheet action="Bonus Action" usage="1/Short Rest">
-            <description>Choose a creature you can see within 30 feet. It has disadvantage on the
-                next ability check, attack roll, or saving throw it makes. You can spend 1 sorcery
-                point to use it again.</description>
+            <description>
+                <p>Choose a creature you can see within 30 feet. It has disadvantage on the next
+                    ability check, attack roll, or saving throw it makes. You can spend 1 sorcery
+                    point to use it again.</p>
+            </description>
         </sheet>
     </element>
 
@@ -74,8 +76,10 @@
                 you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
         </description>
         <sheet action="Action" usage="1/Short Rest">
-            <description>You know the detect evil and good spell and can cast it without expending a
-                spell slot once per short or long rest.</description>
+            <description>
+                <p>You know the detect evil and good spell and can cast it without expending a spell
+                    slot once per short or long rest.</p>
+            </description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" known="true" />
@@ -87,11 +91,16 @@
     <element name="Blood Ties (Fey)" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FEY">
         <supports>Blood Ties Creature Type</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, Fey creatures have
+                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
+                possessed by such creatures.</p>
+        </description>
         <sheet>
             <description>
-                While you are concentrating on the detect evil and good spell, Fey creatures have
-                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
-                possessed by such creatures.
+                <p>While you are concentrating on the detect evil and good spell, Fey creatures have
+                    disadvantage on attack rolls against you, and you cannot be charmed, frightened,
+                    or possessed by such creatures.</p>
             </description>
         </sheet>
     </element>
@@ -99,11 +108,16 @@
     <element name="Blood Ties (Fiend)" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_FIEND">
         <supports>Blood Ties Creature Type</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, Fiend creatures have
+                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
+                possessed by such creatures.</p>
+        </description>
         <sheet>
             <description>
-                While you are concentrating on the detect evil and good spell, Fiend creatures have
-                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
-                possessed by such creatures.
+                <p>While you are concentrating on the detect evil and good spell, Fiend creatures
+                    have disadvantage on attack rolls against you, and you cannot be charmed,
+                    frightened, or possessed by such creatures.</p>
             </description>
         </sheet>
     </element>
@@ -111,11 +125,16 @@
     <element name="Blood Ties (Undead)" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_BLOOD_TIES_UNDEAD">
         <supports>Blood Ties Creature Type</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, Undead creatures have
+                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
+                possessed by such creatures.</p>
+        </description>
         <sheet>
             <description>
-                While you are concentrating on the detect evil and good spell, Undead creatures have
-                disadvantage on attack rolls against you, and you cannot be charmed, frightened, or
-                possessed by such creatures.
+                <p>While you are concentrating on the detect evil and good spell, Undead creatures
+                    have disadvantage on attack rolls against you, and you cannot be charmed,
+                    frightened, or possessed by such creatures.</p>
             </description>
         </sheet>
     </element>
@@ -139,17 +158,18 @@
     <element name="Hulking" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_HULKING">
         <supports>Wretched Curse Type</supports>
-        <description>Your ancestor was cursed with a hulking frame. You have disadvantage on
-            Dexterity (Stealth) checks made to move quietly. Your max hit points increase by 1 for
-            each level in this class. You count as one size larger for carrying capacity and weight
-            you can push, drag, or lift.</description>
+        <description>
+            <p>Your ancestor was cursed with a hulking frame. You have disadvantage on Dexterity
+                (Stealth) checks made to move quietly. Your max hit points increase by 1 for each
+                level in this class. You count as one size larger for carrying capacity and weight
+                you can push, drag, or lift.</p>
+        </description>
         <sheet>
             <description>
-                Your ancestor was cursed with a hulking frame. You have disadvantage on Dexterity
-                (Stealth) checks made to move quietly. Your max hit points increase by 1 for each
-                level in this class ({{hulking:hp}}). You count as one size larger for carrying
-                capacity and weight
-                you can push, drag, or lift.
+                <p>Your ancestor was cursed with a hulking frame. You have disadvantage on Dexterity
+                    (Stealth) checks made to move quietly. Your max hit points increase by 1 for
+                    each level in this class ({{hulking:hp}}). You count as one size larger for
+                    carrying capacity and weight you can push, drag, or lift.</p>
             </description>
         </sheet>
         <rules>
@@ -161,13 +181,17 @@
     <element name="Nocturnal" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_NOCTURNAL">
         <supports>Wretched Curse Type</supports>
-        <description>Your ancestor was cursed to shun the light of day. You have disadvantage on
-            Wisdom (Perception) checks made to see in sunlight. You have darkvision out to 120 feet
-            and can see through magical darkness within that range.</description>
+        <description>
+            <p>Your ancestor was cursed to shun the light of day. You have disadvantage on Wisdom
+                (Perception) checks made to see in sunlight. You have darkvision out to 120 feet and
+                can see through magical darkness within that range.</p>
+        </description>
         <sheet>
-            <description>Your ancestor was cursed to shun the light of day. You have disadvantage on
-                Wisdom (Perception) checks made to see in sunlight. You have darkvision out to 120
-                feet and can see through magical darkness within that range.</description>
+            <description>
+                <p>Your ancestor was cursed to shun the light of day. You have disadvantage on
+                    Wisdom (Perception) checks made to see in sunlight. You have darkvision out to
+                    120 feet and can see through magical darkness within that range.</p>
+            </description>
         </sheet>
         <rules>
             <grant type="Vision" id="ID_VISION_SUPERIORDARKVISION" />
@@ -177,13 +201,18 @@
     <element name="Plaguebearer" type="Archetype Feature" source="Grim Hollow Players Guide"
         id="ID_GRIM_HOLLOW_FEATURE_PLAGUEBEARER">
         <supports>Wretched Curse Type</supports>
-        <description>Your ancestor was cursed with physical symptoms of a plague. You have
-            disadvantage on Charisma (Persuasion) checks made against humanoid creatures who are not
-            blinded. You are immune to disease and have resistance to necrotic damage.</description>
+        <description>
+            <p>Your ancestor was cursed with physical symptoms of a plague. You have disadvantage on
+                Charisma (Persuasion) checks made against humanoid creatures who are not blinded.
+                You are immune to disease and have resistance to necrotic damage.</p>
+        </description>
         <sheet>
-            <description>Your ancestor was cursed with physical symptoms of a plague. You have
-                disadvantage on Charisma (Persuasion) checks made against humanoid creatures who are
-                not blinded. You are immune to disease and have resistance to necrotic damage.</description>
+            <description>
+                <p>Your ancestor was cursed with physical symptoms of a plague. You have
+                    disadvantage on Charisma (Persuasion) checks made against humanoid creatures who
+                    are not blinded. You are immune to disease and have resistance to necrotic
+                    damage.</p>
+            </description>
         </sheet>
     </element>
 
@@ -200,10 +229,10 @@
         </description>
         <sheet action="Action">
             <description>
-                When you cast Bestow Curse, you can choose to cast it by spending 5 sorcery points
-                instead of a spell slot. If you cast the spell using sorcery points, its range
-                changes to 60 feet for that casting and your concentration can't be broken as a
-                result of taking damage.
+                <p>When you cast Bestow Curse, you can choose to cast it by spending 5 sorcery
+                    points instead of a spell slot. If you cast the spell using sorcery points, its
+                    range changes to 60 feet for that casting and your concentration can't be broken
+                    as a result of taking damage.</p>
             </description>
         </sheet>
         <rules>
@@ -225,11 +254,11 @@
         </description>
         <sheet action="Bonus Action" usage="1/Long Rest">
             <description>
-                You adopt the terrifying visage of the being who cursed your ancestor for 10
-                minutes. During this time, you can use an action on each of your turns to cause each
-                creature who can see you within 30 feet make a Wisdom saving throw against your
-                sorcerer spell save DC. On a failure, a creature is frightened of you until the end
-                of your next turn.
+                <p>You adopt the terrifying visage of the being who cursed your ancestor for 10
+                    minutes. During this time, you can use an action on each of your turns to cause
+                    each creature who can see you within 30 feet make a Wisdom saving throw against
+                    your sorcerer spell save DC. On a failure, a creature is frightened of you until
+                    the end of your next turn.</p>
             </description>
         </sheet>
         <rules>
@@ -243,10 +272,9 @@
         <supports>Terrifying Visage Benefit</supports>
         <sheet action="Bonus Action">
             <description>
-                While you have adpoted the terrifying visage, you may teleport up to 30 feet in any
-            direction.
-            </description>
-            > </sheet>
+                <p>While you have adpoted the terrifying visage, you may teleport up to 30 feet in
+            any direction.</p>
+            </description> > </sheet>
     </element>
 
     <element name="Terrifying Visage (Fiend)" type="Archetype Feature"
@@ -254,10 +282,9 @@
         <supports>Terrifying Visage Benefit</supports>
         <sheet>
             <description>
-                While you have adpoted the terrifying visage, you have resistance to cold and fire
-            damage.
-            </description>
-            > </sheet>
+                <p>While you have adpoted the terrifying visage, you have resistance to cold and
+            fire damage.</p>
+            </description> > </sheet>
     </element>
 
     <element name="Terrifying Visage (Undead)" type="Archetype Feature"
@@ -265,11 +292,10 @@
         <supports>Terrifying Visage Benefit</supports>
         <sheet action="Reaction" usage="While Terrifying Visage">
             <description>
-                While you have adpoted the terrifying visage, when you take damage that isn't
+                <p>While you have adpoted the terrifying visage, when you take damage that isn't
             radiant, you can use your reaction to reduce that damage by an amount equal to half your
-            sorceror level.
-            </description>
-            > </sheet>
+            sorceror level.</p>
+            </description> > </sheet>
     </element>
 
     <element name="Vengeful Summons" type="Archetype Feature" source="Grim Hollow Players Guide"
@@ -293,28 +319,18 @@
         <sheet>
             <description>
                 <p>Beginning at 18th level, your magic has become powerful enough that you can call
-                    and
-                    command a servant of those that cursed you. Choose one of the following
-                    creatures as
-                    a representative for your curse based on the choice you made with your Blood
-                    Ties
-                    feature: lamia or troll (fey only), barbed devil or incubus/succubus (fiend
-                    only),
-                    ghost or wraith (undead only).</p>
+                    and command a servant of those that cursed you. Choose one of the following
+                    creatures as a representative for your curse based on the choice you made with
+                    your Blood Ties feature: lamia or troll (fey only), barbed devil or
+                    incubus/succubus (fiend only), ghost or wraith (undead only).</p>
                 <p>You can use an action and spend 5 sorcery points to summon your chosen creature.
-                    The
-                    creature appears in an unoccupied space you can see within 60 feet, and
-                    disappears
-                    when it drops to 0 hit points, you use this feature to summon another creature,
-                    or
-                    after 10 minutes have passed.</p>
+                    The creature appears in an unoccupied space you can see within 60 feet, and
+                    disappears when it drops to 0 hit points, you use this feature to summon another
+                    creature, or after 10 minutes have passed.</p>
                 <p>Roll initiative for the creature, which has its own turns. When you summon it and
-                    on
-                    each of your turns thereafter, you can issue a verbal command to it (requiring
-                    no
-                    action on your part), telling it what it must do on its next turn. If you issue
-                    no
-                    command, it spends its turn attacking any creature within reach.</p>
+                    on each of your turns thereafter, you can issue a verbal command to it
+                    (requiring no action on your part), telling it what it must do on its next turn.
+                    If you issue no command, it spends its turn attacking any creature within reach.</p>
             </description>
         </sheet>
         <!-- <select type="Archetype Feature" name="Vengeful Summons Creature"
