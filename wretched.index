@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
-  <info>
-    <author>Grim Hollow</author>
-    <version>1.0</version>
-    <date>2024-07-01</date>
-  </info>
-  <file type="archetypes" source="Grim Hollow Players Guide" url="https://github.com/tanner-caffrey/grim/sorcerer-wretched/sorcerer-wretched-bloodline.xml"/>
+    <info>
+        <author>Grim Hollow</author>
+        <version>1.0</version>
+        <date>2024-07-01</date>
+        <update version="0.0.1">
+            <file name="swretched.index"
+                url="https://raw.githubusercontent.com/tanner-caffrey/grim/wretched.index" />
+        </update>
+    </info>
+    <files>
+        <file name="sorcerer-wretched-bloodline.xml"
+            url="https://raw.githubusercontent.com/tanner-caffrey/grim/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
+        \</files>
 </index>
