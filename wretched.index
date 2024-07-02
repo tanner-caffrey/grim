@@ -6,11 +6,11 @@
         <date>2024-07-01</date>
         <update version="0.0.1">
             <file name="swretched.index"
-                url="https://raw.githubusercontent.com/tanner-caffrey/grim/wretched.index" />
+                url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/wretched.index" />
         </update>
     </info>
     <files>
         <file name="sorcerer-wretched-bloodline.xml"
-            url="https://raw.githubusercontent.com/tanner-caffrey/grim/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
+            url="https://raw.githubusercontent.com/tanner-caffrey/grim/main/sorcerer-wretched/sorcerer-wretched-bloodline.xml" />
         \</files>
 </index>
